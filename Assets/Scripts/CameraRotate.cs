@@ -26,15 +26,20 @@ public class CameraRotate : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow ))
         {
-            if (transform.rotation.eulerAngles.x ==90 || transform.rotation.eulerAngles.x ==0)
+            if (transform.rotation.eulerAngles.x !=(270))
             {
                 transform.Rotate(-90,0,0);
+              //  transform.rotation = Quaternion.Euler(new Vector3());
             }
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.Rotate(90, 0, 0);
+            if (transform.rotation.eulerAngles.x !=(90))
+            {
+              transform.Rotate(90, 0, 0);  
+            }
+            
         }
         
     }

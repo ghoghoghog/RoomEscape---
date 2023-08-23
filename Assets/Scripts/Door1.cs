@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Door1 : MonoBehaviour
 {
+
+   
+    
+    public GameObject door1;
     private void OnMouseDown()
     {
         if (KeyManager.key >= 1)
