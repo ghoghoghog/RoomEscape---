@@ -16,6 +16,7 @@ public class button : MonoBehaviour
         if (buttonIndex == correctButtonOrder[buttonPressIndex])
         {
             buttonPressIndex++;
+            Debug.Log(buttonPressIndex);
 
             if (buttonPressIndex == correctButtonOrder.Length)
             {
