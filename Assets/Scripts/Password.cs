@@ -15,7 +15,7 @@ public class Password : MonoBehaviour
         string inputPassword = password.text;
         if (inputPassword == correctPassword)
         {
-            KeyManager.key += 1;
+            KeyManager.key1 = 1;
             Destroy(password.gameObject);
         }
         else

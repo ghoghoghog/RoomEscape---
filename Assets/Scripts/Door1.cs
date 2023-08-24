@@ -10,7 +10,7 @@ public class Door1 : MonoBehaviour
     public GameObject door1;
     private void OnMouseDown()
     {
-        if (KeyManager.key >= 1)
+        if (KeyManager.key1 >= 1)
         {
             Destroy(gameObject);
         }
