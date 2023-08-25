@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Door1 : MonoBehaviour
 {
-
-   
+    private Key key;
     
-    public GameObject door1;
     private void OnMouseDown()
     {
-        if (KeyManager.key1 >= 1)
+        if (KeyManager.key1 == 1 )
         {
-            Destroy(gameObject);
+            if ( Key.first == 0)
+            {
+                KeyManager.key1 = 0;
+               Destroy(gameObject);
+                
+            }
+            else
+            {
+                Debug.Log("가지고 있는 열쇠를 써보자");
+            }
         }
         else
         {

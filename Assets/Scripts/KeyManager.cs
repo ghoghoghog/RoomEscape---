@@ -19,7 +19,7 @@ public class KeyManager : MonoBehaviour
 
     private void Start()
     {
-        
+        key1image.SetActive(false);
         key2image.SetActive(false);
         key3image.SetActive(false);
         key4image.SetActive(false);
@@ -28,7 +28,7 @@ public class KeyManager : MonoBehaviour
 
     private void Update()
     {
-        if (key1!=1)
+        if (key1==1)
         {
             key1image.SetActive(true);
         }
@@ -36,37 +36,37 @@ public class KeyManager : MonoBehaviour
         {
            key1image.SetActive(false); 
         }
-        if (key2!=1)
+        if (key2==1)
         {
-            key1image.SetActive(true);
+            key2image.SetActive(true);
         }
         else
         {
             key2image.SetActive(false);
         }
-        if (key3!=1)
+        if (key3==1)
         {
-            key1image.SetActive(true);
+            key3image.SetActive(true);
         }
         else
         {
          key3image.SetActive(false);   
         }
-        if (key4!=1)
+        if (key4==1)
         {
-            key1image.SetActive(true);
+            key4image.SetActive(true);
         }
         else
         {
-            
+            key4image.SetActive(false);
         }
-        if (key5!=1)
+        if (key5==1)
         {
-            key1image.SetActive(true);
+            key5image.SetActive(true);
         }
         else
         {
-            
+            key5image.SetActive(false);
         }
     }
 }

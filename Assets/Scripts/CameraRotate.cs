@@ -9,7 +9,7 @@ public class CameraRotate : MonoBehaviour
  
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             if (transform.rotation.eulerAngles.x==0)
             {
@@ -17,14 +17,14 @@ public class CameraRotate : MonoBehaviour
             }
             
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             if (transform.rotation.eulerAngles.x==0)
             {
                 transform.Rotate(0,-90,0);
             }
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow ))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             if (transform.rotation.eulerAngles.x !=(270))
             {
@@ -33,7 +33,7 @@ public class CameraRotate : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             if (transform.rotation.eulerAngles.x !=(90))
             {

@@ -14,13 +14,16 @@ public class Password : MonoBehaviour
     {
         string inputPassword = password.text;
         if (inputPassword == correctPassword)
-        {
-            KeyManager.key1 = 1;
+        { 
+            KeyManager.key1 = 1; 
             Destroy(password.gameObject);
+            
+            
         }
         else
         {
            Debug.Log("비밀번호가 틀렸습니다");
+           Debug.Log("비밀번호가 어딘가에 있을까?");
         }
         
     }
