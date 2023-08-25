@@ -13,6 +13,7 @@ public class button : MonoBehaviour
 
     public void ButtonPressed(int buttonIndex)
     {
+        Debug.Log(buttonPressIndex);
         if (buttonIndex == correctButtonOrder[buttonPressIndex])
         {
             buttonPressIndex++;

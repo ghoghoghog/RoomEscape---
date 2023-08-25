@@ -9,5 +9,6 @@ public class PuzzleButton : MonoBehaviour
     {
         // 버튼이 클릭되었을 때의 동작 처리
         puzzleManager.ButtonPressed(buttonIndex);
+        Debug.Log("!!!!!!!!!!!!!!!!!!");
     }
 }
